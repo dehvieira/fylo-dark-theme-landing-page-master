@@ -136,13 +136,13 @@ table {
 * {
   margin: auto 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   background: #181f2a;
   color: white;
-  font-size: 20px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -152,8 +152,12 @@ img {
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 3vh;
   padding-top: 70px;
   padding-left: 70px;
@@ -172,6 +176,8 @@ nav ul a {
 }
 
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 1.2%;
   padding-right: 5%;
@@ -179,6 +185,7 @@ nav ul a {
 
 .nav-list a {
   margin-left: 40px;
+  font-size: 15px;
 }
 
 .intro {
@@ -214,6 +221,7 @@ nav ul a {
 }
 
 .intro-botao {
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
   background: linear-gradient(to right, #65e2d9, #339ecc);
   padding-right: 6%;
   padding-left: 6%;
@@ -229,14 +237,20 @@ nav ul a {
 }
 
 .intro-botao:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#29d6cb), to(#85c5e0));
   background: linear-gradient(to right, #29d6cb, #85c5e0);
 }
 
 .section-grid {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(2, 50%);
-  align-content: center;
-  justify-content: center;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   padding: 2em 5%;
   margin-left: 100px;
@@ -267,9 +281,12 @@ nav ul a {
 }
 
 .section-produto {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  margin: 30px 60px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 100px 60px;
 }
 
 .stay-img {
@@ -304,3 +321,128 @@ nav ul a {
 .sub-section-produto img {
   display: inline-block;
 }
+
+.blockquote {
+  z-index: 1;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -25px;
+  width: 50px;
+}
+
+.container-fluid {
+  margin-bottom: 30%;
+}
+
+.container-card {
+  position: absolute;
+  z-index: 3;
+}
+
+.card {
+  -webkit-box-shadow: 5px 5px 10px #1c2431;
+          box-shadow: 5px 5px 10px #1c2431;
+  background-color: #202a3c;
+  padding: 40px 40px;
+}
+
+.card-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.card-profile img {
+  border-radius: 50%;
+  max-width: 40px;
+  margin-right: 15px;
+}
+
+.profile-detalhes h3 {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.profile-detalhes p {
+  font-size: 12px;
+}
+
+.get-early {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5% 5%;
+  -webkit-box-shadow: 5px 5px 20px #181f2a;
+          box-shadow: 5px 5px 20px #181f2a;
+  height: auto;
+  background-color: #1a212e;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.get-early h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.get-early p {
+  text-align: center;
+  max-width: 800px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.contact-email {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.e-mail {
+  border-radius: 25px;
+  padding: 20px 30px;
+  width: 500px;
+  outline: none;
+  margin-right: 4%;
+}
+
+.button-email {
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+  border-radius: 30px;
+  outline: none;
+  color: white;
+  font-weight: 400;
+  width: 200px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-email:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#29d6cb), to(#85c5e0));
+  background: linear-gradient(to right, #29d6cb, #85c5e0);
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */

@@ -10,7 +10,6 @@
 body {
   background: $cor-primaria-dark-blue-claro;
   color: $cor-texto;
-  font-size: $font-texto;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -46,6 +45,7 @@ nav {
 
   a {
     margin-left: 40px;
+    font-size: 15px;
   }
 }
 
@@ -73,7 +73,7 @@ nav {
     width: 100%;
   }
   p {
-    font-size: $font-texto;
+    font-size: 20px;
     font-weight: 400;
     margin-top: 2%;
     text-align: center;
@@ -134,7 +134,7 @@ nav {
 .section-produto {
   display: flex;
   justify-content: space-around;
-  margin: 30px 60px;
+  margin: 100px 60px;
 }
 
 .stay-img {
@@ -166,4 +166,107 @@ nav {
   img {
     display: inline-block;
   }
+}
+
+.blockquote {
+  z-index: 1;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -25px;
+  width: 50px;
+}
+
+.container-fluid {
+  margin-bottom: 30%;
+}
+
+.container-card {
+  position: absolute;
+  z-index: 3;
+}
+
+.card {
+  box-shadow: 5px 5px 10px hsl(217, 28%, 15%);
+  background-color: hsl(219, 30%, 18%);
+  padding: 40px 40px;
+}
+
+.card-profile {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.card-profile img {
+  border-radius: 50%;
+  max-width: 40px;
+  margin-right: 15px;
+}
+
+.profile-detalhes {
+  h3 {
+    font-weight: bold;
+    margin-bottom: 0.3em;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+.get-early {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5% 5%;
+  box-shadow: 5px 5px 20px hsl(217, 28%, 13%);
+  height: auto;
+  background-color: hsl(218, 28%, 14%);
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  p {
+    text-align: center;
+    max-width: 800px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+.contact-email {
+  margin-top: 20px;
+  display: flex;
+}
+
+.e-mail {
+  border-radius: 25px;
+  padding: 20px 30px;
+  width: 500px;
+  outline: none;
+  margin-right: 4%;
+}
+
+.button-email {
+  background: $cor-ciano-blue;
+  border-radius: 30px;
+  outline: none;
+  color: white;
+  font-weight: 400;
+  width: 200px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: ($cor-ciano-blue-hover);
+  }
+}
+
+.info {
+  display: flex;
 }
