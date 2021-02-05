@@ -205,6 +205,16 @@ nav ul a {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .intro-conteudo h1 {
@@ -214,7 +224,7 @@ nav ul a {
 }
 
 .intro-conteudo p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   margin-top: 2%;
   text-align: center;
@@ -295,6 +305,16 @@ nav ul a {
 
 .sub-section-produto {
   margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .sub-section-produto h1 {
@@ -444,5 +464,39 @@ nav ul a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.info-content {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 15px;
+}
+
+.info-content color:white
+span {
+  line-height: 1.3em;
+}
+
+.info-item-contact img, p {
+  display: inline-block;
+}
+
+.info-item-contact li:nth-child(2) {
+  margin-top: 15px;
+}
+
+.info-content ul li a {
+  text-decoration: none;
+  color: white;
+  line-height: 2em;
+}
+
+.logo-twitter a {
+  width: 2px;
 }
 /*# sourceMappingURL=style.css.map */
