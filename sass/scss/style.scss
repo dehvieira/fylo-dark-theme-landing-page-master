@@ -5,7 +5,6 @@
   margin: auto 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -67,7 +66,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 5%;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 
@@ -142,7 +141,8 @@ nav {
 }
 
 .stay-img {
-  max-width: 50%;
+  min-width: 350px;
+  height: auto;
 }
 
 .sub-section-produto {
@@ -183,10 +183,6 @@ nav {
   width: 50px;
 }
 
-.container-fluid {
-  margin-bottom: 30%;
-}
-
 .container-card {
   position: absolute;
   z-index: 3;
@@ -221,7 +217,6 @@ nav {
   }
 }
 
-
 .get-early {
   display: flex;
   flex-direction: column;
@@ -231,8 +226,8 @@ nav {
   height: auto;
   background-color: hsl(218, 28%, 14%);
   width: 80%;
-  margin: 0 auto;
   align-items: center;
+  margin: 25% auto 8% auto;
 
   h1 {
     font-size: 30px;
@@ -276,36 +271,44 @@ nav {
 }
 
 .info {
+  margin: 2% auto 5% auto;
+}
+
+.info-content {
   display: flex;
-}
-
-.info-content{
-  margin-top:10%;
-  display:flex;
   justify-content: space-between;
-  font-size:15px;
-  color:white
-  span{
-  line-height: 1.3em;
+  font-size: 15px;
+  color:white span {
+    line-height: 1.3em;
+  }
 }
 
-}
-
- .info-item-contact img, p {
-  display: inline-block; 
+.info-item-contact img,
+p {
+  display: inline-block;
 }
 
 .info-item-contact li:nth-child(2) {
   margin-top: 15px;
 }
 
+.info-content ul li a {
+  text-decoration: none;
+  color: $cor-texto;
+  line-height: 2em;
+}
 
-.info-content ul li a {  
-    text-decoration: none;
-    color: $cor-texto;
-    line-height: 2em;   
+.social-media ul {
+  display: flex;
+  li:nth-child(n + 1) {
+    margin-right: 20px;
+    img {
+      max-width: 20px;
+    }
   }
+}
 
-  .logo-twitter a {
-    width: 2px;
-  }
+.img-footer {
+  max-width: 50%;
+  margin-left: 12%;
+}
