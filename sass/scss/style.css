@@ -313,9 +313,9 @@ nav ul a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sub-section-produto h1 {
@@ -352,7 +352,7 @@ nav ul a {
 }
 
 .container-card {
-  position: absolute;
+  position: relative;
   z-index: 3;
 }
 
@@ -408,7 +408,7 @@ nav ul a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 25% auto 8% auto;
+  margin: 10% auto 8% auto;
 }
 
 .get-early h1 {
@@ -505,7 +505,7 @@ p {
 }
 
 .img-footer {
-  max-width: 50%;
+  max-width: 100%;
   margin-left: 12%;
 }
 /*# sourceMappingURL=style.css.map */
